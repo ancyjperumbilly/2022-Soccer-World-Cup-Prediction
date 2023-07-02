@@ -1,5 +1,5 @@
 ![2022 FIFA World Cup](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/2022_FIFA_World_Cup.svg.png)
-# Soccer World Cup Prediction
+# 2022 Soccer World Cup Prediction
 ## Introduction
 ### Context:
 Children First Soccer (CFS) Ltd. (non-profit that financially supports underprivileged children to enter into the professional world of soccer) wants to promote soccer in the developing markets across Asia (e.g. Laos, Cambodia, Myanmar etc.) leading up to the 2026 FIFA World Cup in USA, Canada and Mexico. CFS would like to understand which competitive teams should drive promotional campaigns within these markets in order to create excitement and passion for the game. CFS believes this will set up the foundation for children (both boys & girls), specifically in the age group of 6-15, to be coached, trained and presumably selected for the 2027 FIFA U-17 Boys World Cup in China & Girls World Cup in New Zealand respectively.<br>
@@ -19,10 +19,10 @@ Constraints:
 Factors such as venue, host country weather, timing of the tournament, referee judgment, Video Assistant Referee (VAR) interventions, squad formation, in-game tactical switches, and player concentration and stamina all play a huge role in predicting the final outcome. These elements are relatively new to sports science and unsure about how to apply them as influential statistical factors in an algorithm.
 
 ### Stakeholders:
-CFS CMO (Chief Marketing Officer)<br>
-CFS COO (Chief Operating Officer)<br>
-CFS APAC Regional Head<br>
-Ministry of Sports (APAC Developing Markets)<br>
+- CFS CMO (Chief Marketing Officer)<br>
+- CFS COO (Chief Operating Officer)<br>
+- CFS APAC Regional Head<br>
+- Ministry of Sports (APAC Developing Markets)<br>
 
 ### Key data Sources:
 
@@ -96,12 +96,12 @@ The objective was to prepare the data to apply feature engineering methods that 
 
 ### Create Features:
 The datasets were filtered to only utilize data from 2018 leading up to the  2022 World Cup to make it relevant. The idea here is to create possible features that have an impact on predicting football games. By intuition, we say that features that impact could be:<br>
-1. Past game points made
-2. Past goals scored and suffered
-3. The importance of game (friendly or not)
-4. Rank of the teams
-5. Rank increment of the teams
-6. Goals made and suffered by ranking faced<br>
+- Past game points made
+- Past goals scored and suffered
+- The importance of game (friendly or not)
+- Rank of the teams
+- Rank increment of the teams
+- Goals made and suffered by ranking faced<br>
 
 So, the first thing to do is create a feature that says which team won and how many points they made in the game. The game points were assigned as 3 for win, 1 for draw and 0 for lose and which are different from the FIFA rank points that are already in the database. Also, it's supposed that FIFA Rank points and FIFA Ranking of the same team are negatively correlated, and we should use only one of them to create new features. This supposition is checked below:
 ![HeatMap](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20HeatMap.png)<br>
@@ -189,3 +189,5 @@ As per the predictive analysis completed and to meet the Phase 1 requirements of
 
 ### Additional Considerations:
 Analysis specifically focused on Asian datasets e.g. AFC (Asian Football Confederation) Cup stats, Asian players stats from European leagues etc. will definitely boost the participation rate in the focused markets however these datasets were not available in the public domain for analysis & deeper insights.
+
+![WC Winner](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/WC%20Winner.jpeg)
