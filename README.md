@@ -145,3 +145,47 @@ Final features that were selected were:
 9. dif_points_rank
 10. dif_points_rank_l5
 11. is_friendly
+
+### Machine Learning:
+Utilizing the 11 features selected, the objective of this segment is to identify & run multiple machine learning algorithms and select the highest accuracy model to predict the winner of the 2022 Soccer World Cup.<br>
+
+3 of the following models were analyzed for the right fit:
+1. Decision Tree
+2. Logistic Regression
+3. Random Forest
+
+![ML-RF](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20RF.png)<br>
+Random forest was selected as the most accurate model.
+
+## Predictions
+Random forest model was utilized to predict the winners across the tournament. The teams who qualified for the 2022 Soccer World Cup were identified utilizing the 2022 World Cup Groups and 2022 World Cup Matches datasets.<br>
+
+### Group Stage:
+Following are the Group Stage winners:<br>
+![Group Stages](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Group%20Stages.png)<br>
+
+### Round of 16:
+Following are the Round of 16 winners:<br>
+![Round of 16](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Round%20of%2016.png)<br>
+
+### Quarter Finals:
+Following are the Quarter Final winners:<br>
+![Quarter Finals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Quarterfinals.png)<br>
+
+### Semi Finals:
+Following are the Semi Final winners:<br>
+![Semi Finals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Semi%20Finals.png)<br>
+
+### Third Place Match:
+Argentina is the Third Place match winner!<br>
+![Third Place](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Third%20Place.png)<br>
+
+### Finals:
+Germany is the winner of the 2022 Soccer World Cup!<br>
+![Finals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Finals.png)<br>
+
+## Summary & Recommendations
+As per the predictive analysis completed and to meet the Phase 1 requirements of the proposal, the recommendation is for CFS Ltd. to focus their promotional campaigns on the Top 14 countries that were predicted to reach the Round of 16, with a special emphasis on South Korea as they were the only Asian country predicted to make it to the next round. This should also be supported by highlighting marquee players like Lionel Messi, Cristiano Ronalo as well as young and upcoming talent like Kylian Mbappe, Cody Gakpo etc. and their corresponding league and international impact (statistics) to create additional excitement and fan following.<br>
+
+### Additional Considerations:
+Analysis specifically focused on Asian datasets e.g. AFC (Asian Football Confederation) Cup stats, Asian players stats from European leagues etc. will definitely boost the participation rate in the focused markets however these datasets were not available in the public domain for analysis & deeper insights.
