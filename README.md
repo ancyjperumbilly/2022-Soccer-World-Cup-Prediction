@@ -67,3 +67,26 @@ All 7 datasets in scope were cleaned.<br>
 The data types across all 7 tables were consistent; however the *“Win Condition”* column in both World Cup Matches and International Matches tables had to be dropped due to null values and this was also considered to be a low priority feature to be analyzed.<br>
 
 The *“Winning Team”* & *“Losing Team”* columns are expected to have null values when the match is a draw.<br>
+
+## Exploratory Data Analysis
+Analysis was focused on match results, player statistics, and overall team performance utilizing data from international matches played from 2012 to 2017. This was done utilizing the FIFAallMatchBoxData  table. Data visualization techniques were utilized to explore patterns and trends in the data, and statistical methods to analyze and make inferences about the dataset.<br>
+
+### Possession Comparison:
+![Possession](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/EDA%20-%20Possession%20%25.png)<br>
+On average, team1 has a better possession % than team2.<br>
+
+### Possession versus Goals scored:
+![Possession Team1](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/EDA%20-%20Team%201%20Possession%20vs%20Goals.png)<br>
+![Possession Team2](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/EDA%20-%20Team%202%20Possession%20vs%20Goals.png)<br>
+Both team1 and team2 scored more goals when they had more ball possession with team1 scoring more than team2.<br>
+
+### Comparison of Total Attempts, On Target Attempts, and Goals scored:
+![Attempts Goals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/EDA%20-%20Attempts%20%26%20Goals.png)<br>
+Team1 had better stats across Total Attempts, On Target Attempts as well as Goals Scored compared to team2.<br>
+
+### Distribution of Goals:
+![Team1 Distribution](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/EDA%20-%20Team%201%20Goals.png)<br>
+![Team1 Distribution](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/EDA%20-%20Team%202%20Goals.png)<br>
+Team2 had a better distribution of goals scored compared to team1.<br>
+
+**CONCLUSION:** It can be inferred that possession and attempts are crucial factors in determining the number of goals scored in a match, however, it is not the only factor, other factors like team strategies, player skills, and luck also play a role.<br>
