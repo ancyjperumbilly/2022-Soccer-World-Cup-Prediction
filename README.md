@@ -90,3 +90,58 @@ Team1 had better stats across Total Attempts, On Target Attempts as well as Goal
 Team2 had a better distribution of goals scored compared to team1.<br>
 
 **CONCLUSION:** It can be inferred that possession and attempts are crucial factors in determining the number of goals scored in a match, however, it is not the only factor, other factors like team strategies, player skills, and luck also play a role.<br>
+
+## Featured Engineering & ML
+The objective was to prepare the data to apply feature engineering methods that will create the database in order to build Machine Learning algorithms to predict the winner of the 2022 Soccer World Cup.<br>
+
+### Create Features:
+The datasets were filtered to only utilize data from 2018 leading up to the  2022 World Cup to make it relevant. The idea here is to create possible features that have an impact on predicting football games. By intuition, we say that features that impact could be:<br>
+1. Past game points made
+2. Past goals scored and suffered
+3. The importance of game (friendly or not)
+4. Rank of the teams
+5. Rank increment of the teams
+6. Goals made and suffered by ranking faced<br>
+
+So, the first thing to do is create a feature that says which team won and how many points they made in the game. The game points were assigned as 3 for win, 1 for draw and 0 for lose and which are different from the FIFA rank points that are already in the database. Also, it's supposed that FIFA Rank points and FIFA Ranking of the same team are negatively correlated, and we should use only one of them to create new features. This supposition is checked below:
+![HeatMap](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20HeatMap.png)<br>
+### Feature Analysis:
+![BoxPlot1](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20BoxPlot1.png)<br>
+![BoxPlot2](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20BoxPlot2.png)<br>
+Based on the boxplots, *“rank difference”* and *“is_friendly”* are the only good separators of data. But, we can create new features that differentiates between home and away teams and analyze if they are good at separating the data.<br>
+
+![BoxPlot3](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20BoxPlot3.png)<br>
+With that plot, we see that *“goal differences”* (full and last 5 games) and *“goals suffered”* (full and last 5 games) are good separators.<br>
+
+Now, we have 6 features:<br>
+1. rank_dif
+2. goals_dif
+3. goals_dif_l5
+4. goals_suf_dif
+5. goals_suf_dif_l5
+6. is_friendly<br>
+
+We can create other features, like differences of points made, differences of points made by rank faced and differences of rank faced.<br>
+![BoxPlot4](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20BoxPlot4.png)<br>
+*“Difference of points”* (full and last 5 games), *“difference of points by ranking faced”* (full and last 5 games) and *“difference of rank faced”* (full and last 5 games) are good features.<br> 
+
+Some of the generated features have very similar distributions which were analyzed using the following scatterplots:<br>
+![Splot1](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20SP1.png)<br>
+![Splot2](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20SP2.png)<br>
+![Splot3](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20SP3.png)<br>
+![Splot4](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20SP4.png)<br>
+*“Goals difference by ranking faced”* and its last 5 games version has very similar distributions. So, we will use only the full version (goals_per_ranking_dif). For *“differences of rank faced”*, *“game points by rank faced”* and *“mean game points by rank faced”*, the two versions (full and 5 games) are not so similar. So, we will use both.<br>
+
+Final features that were selected were:
+
+1. rank_dif
+2. goals_dif
+3. goals_dif_l5
+4. goals_suf_dif
+5. goals_suf_dif_l5
+6. dif_rank_agst
+7. dif_rank_agst_l5
+8. goals_per_ranking_dif
+9. dif_points_rank
+10. dif_points_rank_l5
+11. is_friendly
