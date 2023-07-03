@@ -190,4 +190,7 @@ As per the predictive analysis completed and to meet the Phase 1 requirements of
 ### Additional Considerations:
 Analysis specifically focused on Asian datasets e.g. AFC (Asian Football Confederation) Cup stats, Asian players stats from European leagues etc. will definitely boost the participation rate in the focused markets however these datasets were not available in the public domain for analysis & deeper insights.
 
+## Credits
+Thanks to Daniel Wu for his relentless support and thought leadership all throughout the project as my Springboard mentor, Kenneth Gil-Pasquel for troubleshooting and resolving my GitHub, Jupyter notebook queries and DJ Sarkar for quick and timley responses to subject matter related doubts.
+
 ![WC Winner](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/WC%20Winner.jpeg)
