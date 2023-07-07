@@ -106,7 +106,15 @@ The datasets were filtered to only utilize data from 2018 leading up to the  202
 So, the first thing to do is create a feature that says which team won and how many points they made in the game. The game points were assigned as 3 for win, 1 for draw and 0 for lose and which are different from the FIFA rank points that are already in the database. Also, it's supposed that FIFA Rank points and FIFA Ranking of the same team are negatively correlated, and we should use only one of them to create new features. This supposition is checked below:
 ![HeatMap](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20HeatMap.png)<br>
 
-### 5.2 Feature Analysis:
+### 5.2 Feature Significance:
+Data Scientists who have analyzed the game for many years have typically focused on 3 broad feature categories namely: Goals, Points & Rank. Within these categories, there are many different variables that have to be considered in order to identify further nuances on how each features influence the outcome of a game. Some examples used in this study are:<br>
+1. **Goals** - # of goals scored by the team, scored against by other teams, scored in home games, scored in away games etc.
+2. **Points** - # of points won in home games, # of points won in away games etc.
+3. **Rank** - FIFA Ranking<br>
+
+In the modern era, Data Scientists have access to even more granular data such as heat map of players during the game, effectiveness of formations etc. which I’ve not considered for this analysis as these datasets were not available in the public domain.
+
+### 5.3 Feature Analysis:
 ![BoxPlot1](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20BoxPlot1.png)<br>
 ![BoxPlot2](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20BoxPlot2.png)<br>
 Based on the boxplots, *“rank difference”* and *“is_friendly”* are the only good separators of data. But, we can create new features that differentiates between home and away teams and analyze if they are good at separating the data.<br>
@@ -145,17 +153,27 @@ Final features that were selected were:
 8. goals_per_ranking_dif
 9. dif_points_rank
 10. dif_points_rank_l5
-11. is_friendly
+11. is_friendly_0
+12. is_friendly_1
 
-### 5.3 Machine Learning:
-Utilizing the 11 features selected, the objective of this segment is to identify & run multiple machine learning algorithms and select the highest accuracy model to predict the winner of the 2022 Soccer World Cup.<br>
+### 5.4 Feature Importance:
+As seen in the visualization as well as feature scores below, *"rank_dif* is the highest ranked feature and *"is_friendly"* (both features) are the lowest in significance.<br>
+![visualization](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20Visual.png)
+![scores](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20Scores.png)
 
-3 of the following models were analyzed for the right fit:
-1. Decision Tree
-2. Logistic Regression
-3. Random Forest
 
-![ML-RF](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20RF.png)<br>
+### 5.5 Machine Learning:
+12 predictive features were used to train and test 3 different machine learning models to identify the most appropriate model.<br>
+
+3 of the following models were analyzed for the right fit:<br>
+
+**1. Decision Tree**<br>
+![ML-DT](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20DT.png)<br>   
+**2. Logistic Regression**<br>
+![ML-LR](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20LR.png)<br>
+**4. Random Forest**<br>
+![ML-RF](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20RFT.png)<br>
+
 Random forest was selected as the most accurate model.
 
 ## 6. Predictions
@@ -192,6 +210,6 @@ As per the predictive analysis completed and to meet the Phase 1 requirements of
 Analysis specifically focused on Asian datasets e.g. AFC (Asian Football Confederation) Cup stats, Asian players stats from European leagues etc. will definitely boost the participation rate in the focused markets however these datasets were not available in the public domain for analysis & deeper insights.
 
 ## 8. Credits
-Thanks to Daniel Wu for his relentless support and thought leadership all throughout the project as my Springboard mentor, Kenneth Gil-Pasquel for troubleshooting and resolving my GitHub, Jupyter notebook queries and DJ Sarkar for quick and timley responses to subject matter related doubts.
+Thanks to Daniel Wu for his relentless support and thought leadership all throughout the project as my Springboard mentor, Kenneth Gil-Pasquel for troubleshooting and resolving my GitHub, Jupyter notebook & Google collab queries and DJ Sarkar for quick and timely responses to subject matter related doubts.
 
 ![WC Winner](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/WC%20Winner.jpeg)
