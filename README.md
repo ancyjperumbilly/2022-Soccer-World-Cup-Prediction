@@ -107,7 +107,7 @@ So, the first thing to do is create a feature that says which team won and how m
 ![HeatMap](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/FE%20-%20HeatMap.png)<br>
 
 ### 5.2 Feature Significance:
-Data Scientists who have analyzed the game for many years have typically focused on 3 broad feature categories namely: Goals, Points & Rank. Within these categories, there are many different variables that have to be considered in order to identify further nuances on how each features influence the outcome of a game. Some examples used in this study are:<br>
+Data Scientists who have analyzed the game for many years have typically focused on 3 broad feature categories namely: Goals, Points & Rank. Within these categories, there are many different variables that have to be considered in order to identify further nuances on how each feature influences the outcome of a game. Some examples used in this study are:<br>
 1. **Goals** - # of goals scored by the team, scored against by other teams, scored in home games, scored in away games etc.
 2. **Points** - # of points won in home games, # of points won in away games etc.
 3. **Rank** - FIFA Ranking<br>
