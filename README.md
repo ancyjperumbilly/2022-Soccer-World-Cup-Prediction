@@ -174,7 +174,7 @@ As seen in the visualization as well as feature scores below, *"rank_dif* is the
 **4. Random Forest**<br>
 ![ML-RF](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20RFT.png)<br>
 
-Random forest was selected as the most accurate model.
+Random forest was selected as the most appropriate model.
 
 ## 6. Predictions
 Random forest model was utilized to predict the winners across the tournament. The teams who qualified for the 2022 Soccer World Cup were identified utilizing the 2022 World Cup Groups and 2022 World Cup Matches datasets.<br>
