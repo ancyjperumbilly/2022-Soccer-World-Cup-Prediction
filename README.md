@@ -181,27 +181,27 @@ Random forest model was utilized to predict the winners across the tournament. T
 
 ### 6.1 Group Stage:
 Following are the Group Stage winners:<br>
-![Group Stages](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Group%20Stages.png)<br>
+![Group Stages](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Group%20Stage.png)<br>
 
 ### 6.2 Round of 16:
 Following are the Round of 16 winners:<br>
-![Round of 16](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Round%20of%2016.png)<br>
+![Round of 16](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20R16.png)<br>
 
 ### 6.3 Quarter Finals:
 Following are the Quarter Final winners:<br>
-![Quarter Finals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Quarterfinals.png)<br>
+![Quarter Finals](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20QF.png)<br>
 
 ### 6.4 Semi Finals:
 Following are the Semi Final winners:<br>
-![Semi Finals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Semi%20Finals.png)<br>
+![Semi Finals](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20SF.png)<br>
 
 ### 6.5 Third Place Match:
-Argentina is the Third Place match winner!<br>
-![Third Place](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Third%20Place.png)<br>
+Brazil is the Third Place match winner!<br>
+![Third Place](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Third.png)<br>
 
 ### 6.6 Finals:
-Germany is the winner of the 2022 Soccer World Cup!<br>
-![Finals](https://github.com/ancyjperumbilly/Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Finals.png)<br>
+Argentina is the winner of the 2022 Soccer World Cup!<br>
+![Finals](https://github.com/ancyjperumbilly/2022-Soccer-World-Cup-Prediction/blob/main/5.%20Reference%20Images/ML%20-%20Final.png)<br>
 
 ## 7. Summary & Recommendations
 As per the predictive analysis completed and to meet the Phase 1 requirements of the proposal, the recommendation is for CFS Ltd. to focus their promotional campaigns on the Top 14 countries that were predicted to reach the Round of 16, with a special emphasis on South Korea as they were the only Asian country predicted to make it to the next round. This should also be supported by highlighting marquee players like Lionel Messi, Cristiano Ronalo as well as young and upcoming talent like Kylian Mbappe, Cody Gakpo etc. and their corresponding league and international impact (statistics) to create additional excitement and fan following.<br>
